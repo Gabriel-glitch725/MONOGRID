@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---Tailwind CDN-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+     <!--Font Awesome  CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="index.css">
+
+    <script>
+      tailwind.config = {
+         darkMode : 'class'
+      }
+    </script>
+
+    <title>Document</title>
+</head>
+<body>
+    <body class=" bg-white text-black dark:bg-[--background--] dark:text-white ">
+   
+
+ <nav class="bg-white shadow-sm sticky top-0 z-50 dark:bg-[--background--] dark:text-white ">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex justify-between h-16">
+
+                <div class="flex items-center">
+
+                    <div class="flex-shrink-0 flex items-center">
+
+                        <h1 class="text-xl font-bold text-gray-900 dark:text-white">MONOGRID</h1>
+
+                        <span class="ml-2 text-xs font-medium bg-blue-100 text-blue-800 px-2 py-1 rounded-full">Productive</span>
+
+                    </div>
+
+                    <div class="hidden md:ml-10 md:flex md:space-x-8">
+
+                        <a href="#" class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-blue-500 text-sm font-medium dark:text-white">Home</a>
+
+                        <a href="#features" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium dark:text-white">Features</a>
+
+                        <a href="#solutions" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium dark:text-white">Solutions</a>
+
+                        <a href="#pricing" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium dark:text-white">Pricing</a>
+
+                        <a href="#testimonials" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium dark:text-white">Testimonials</a>
+
+                    </div>
+
+                </div>
+
+                <div class="flex items-center">
+
+                    
+
+                     <button id="themeToggle" class=" text-2xl  mr-5  " title="sb" ><i class="fas fa-moon cursor-pointer" id="themeIcon"></i></button>
+
+                    <button class="ml-4 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition duration-200 hidden lg:block">
+
+                        Get Started Free
+
+                    </button>
+                  
+                    <button id="hamburger-button" class="text-3xl cursor-pointer m-1 mr-2 lg:hidden m">     
+
+                    &#97765
+
+                  </button>
+                 
+                  <header id="mobile-menu" class="fixed top-0 left-0 w-full h-screen bg-white text-black text-3xl flex-col justify-content-center lg:hidden origin-top animate-open-menu hidden dark:bg-[--background--] dark:text-white z-50 overflow-y-auto">
+  
+                        <div class="flex flex-row justify-between mt-2 w-full sm:mt-0 ">
+    
+                            <button class="text-5xl self-end px-3 flex justify-end mr-auto w-full sm:px-0 sm:text-4xl sm:mr-2">&times</button>
+  </div>
+  
+  <nav class="flex flex-col items-start py-auto ml-2 capitalize cursor-pointer " aria-label="mobile">
+    
+        <a href="#" class=" text-left py-6 hover:opacity cursor-pointer mt-[4rem] sm:mt-[1.5rem] dark:text-white">Home</a>
+    
+        <a href="#features" class=" text-left py-6 hover:opacity  md:py-3 dark:text-white">features</a>
+    
+        <a href="#solutions"  class=" text-left py-6 hover:opacity cursor-pointer  sm:mb-3 md:py-3 dark:text-white">Solutions</a>
+    
+        <a href="#pricing"   class=" text-left py-6 hover:opacity cursor-pointer sm:mb-3 md:py-3 dark:text-white">Pricing</a>
+    
+        <a href=""   class=" text-left py-6 hover:opacity cursor-pointer  sm:mb-3 md:py-3 dark:text-white">Testimonials</a>
+ 
+</nav>
+</header>
+
+   
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+
+    <div class="min-h-screen flex items-center justify-center p-4 pt-12  ">
+
+        <div class="max-w-7xl w-full">
+
+            <!-- Main Card -->
+
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden relative dark:bg-white/5 dark:text-white ">
+
+                <!-- Grid Pattern Background -->
+
+                <div class="grid-pattern absolute top-0 right-0 w-1/2 h-full z-0 "></div>
+
+               
+
+                <div class="flex flex-col md:flex-row relative z-10 ">
+
+                    <!-- Left Content Section -->
+
+                    <div class="md:w-1/2 p-8 md:p-12">
+
+                        <!-- Header -->
+
+                        <div class="mb-8">
+
+                            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-2 dark:text-white">Productive</h1>
+
+                            <div class="flex items-center">
+
+                                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-blue-600">MONOGRID</h2>
+
+                                <span class="ml-3 text-sm font-medium bg-blue-100 text-blue-800 px-3 py-1 rounded-full">brigada*</span>
+
+                            </div>
+
+                        </div>
+
+                       
+
+                        <!-- Divider -->
+
+                        <div class="h-px w-full bg-gray-200 my-8"></div>
+
+                       
+
+                        <!-- Main Message -->
+
+                        <div class="mb-8">
+
+                            <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 dark:text-white">
+
+                                <span class="text-red-500">Don't Let</span><br>
+
+                                Spreadsheets and Disconnected Tools Slow You Down
+
+                            </h3>
+
+                        </div>
+
+                       
+
+                        <!-- Sub Message -->
+
+                        <div class="mb-8">
+
+                            <p class="text-xl text-gray-600 dark:text-white">
+
+                                See all project costs with real-profitability insights
+
+                            </p>
+
+                        </div>
+
+                       
+
+                        <!-- CTA Button -->
+
+                        <div class="mt-12 flex flex-col sm:flex-row gap-4">
+
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-200 shadow-md transform hover:-translate-y-1">
+
+                                Get Started Free
+
+                            </button>
+
+                            <button class="border border-gray-300 hover:border-gray-400 text-gray-700 font-medium py-3 px-8 rounded-lg transition duration-200 dark:bg-white">
+
+                                <i class="fas fa-play-circle mr-2 dark:text-black"></i> Watch Demo
+
+                            </button>
+
+                        </div>
+
+                       
+
+                        <!-- Trust Indicators -->
+
+                        <div class="mt-12 ">
+
+                            <p class="text-gray-500 text-sm mb-4 dark:text-white">Trusted by teams at</p>
+
+                            <div class="flex flex-wrap gap-6 items-center ">
+
+                                <div class="text-gray-400 font-bold text-lg dark:text-blue-600">TechCorp</div>
+
+                                <div class="text-gray-400 font-bold text-lg dark:text-blue-600">InnovateCo</div>
+
+                                <div class="text-gray-400 font-bold text-lg dark:text-blue-600">GlobalSoft</div>
+
+                                <div class="text-gray-400 font-bold text-lg dark:text-blue-600">FutureLabs</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                   
+
+                    <!-- Right Visual Section -->
+
+                    <div class="md:w-1/2 bg-blue-500 p-8 md:p-12 flex flex-col justify-center text-white relative ">
+
+                        <!-- Floating Shapes -->
+
+                        <div class="absolute top-10 right-10 w-20 h-20 bg-white/10 rounded-full "></div>
+
+                        <div class="absolute bottom-16 left-10 w-12 h-12 bg-white/10 rounded-lg transform rotate-45"></div>
+
+                        <div class="absolute top-1/2 left-1/4 w-16 h-16 bg-white/10 rounded-lg"></div>
+
+                       
+
+                        <div class="text-center relative z-10 ">
+
+                            <!-- Icon -->
+
+                            <div class="mb-6 dark:text-black">
+
+                                <div class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4 ">
+
+                                    <svg class="w-10 h-10 text-white " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+                                        <path stroke-linecap="round" class="dark:bg-black" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+
+                                    </svg>
+
+                                </div>
+
+                            </div>
+
+                           
+
+                            <!-- Title -->
+
+                            <h3 class="text-2xl font-bold mb-4">Unified Project Management</h3>
+
+                           
+
+                            <!-- Description -->
+
+                            <p class="text-blue-100 mb-8 max-w-md mx-auto ">
+
+                                Connect all your tools and workflows in one platform designed for modern teams.
+
+                            </p>
+
+                           
+
+                            <!-- Stats -->
+
+                            <div class="flex justify-center space-x-8">
+
+                                <div class="text-center">
+
+                                    <div class="text-3xl font-bold">85%</div>
+
+                                    <div class="text-sm text-blue-200 ">Faster Reporting</div>
+
+                                </div>
+
+                                <div class="text-center">
+
+                                    <div class="text-3xl font-bold">40%</div>
+
+                                    <div class="text-sm text-blue-200 ">Cost Reduction</div>
+
+                                </div>
+
+                                <div class="text-center">
+
+                                    <div class="text-3xl font-bold">3.5x</div>
+
+                                    <div class="text-sm text-blue-200 ">ROI</div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Logo Cloud Section -->
+
+    <div class="py-12 bg-white dark:bg-[--background--] ">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5 ">
+
+                <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+
+                    <div class="h-12 flex items-center text-gray-500 font-bold text-xl dark:text-blue-600">TechCorp</div>
+
+                </div>
+
+                <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+
+                    <div class="h-12 flex items-center text-gray-500 font-bold text-xl dark:text-blue-600">InnovateCo</div>
+
+                </div>
+
+                <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+
+                    <div class="h-12 flex items-center text-gray-500 font-bold text-xl dark:text-blue-600">GlobalSoft</div>
+
+                </div>
+
+                <div class="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
+
+                    <div class="h-12 flex items-center text-gray-500 font-bold text-xl dark:text-blue-600">FutureLabs</div>
+
+                </div>
+
+                <div class="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
+
+                    <div class="h-12 flex items-center text-gray-500 font-bold text-xl dark:text-blue-600">DataSystems</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Features Section -->
+
+    <section id="features" class="py-16 bg-white dark:bg-[--background--] ">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-16">
+
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-blue-600">Everything you need to manage projects effectively</h2>
+
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto dark:text-white">
+
+                    MONOGRID Productive brings all your project management needs into one unified platform, eliminating tool sprawl and increasing team productivity.
+
+                </p>
+
+            </div>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 dark:bg-white/5">
+
+                <!-- Feature 1 -->
+
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition duration-200 border border-gray-100 dark:bg-white/5 dark:text-white">
+
+                    <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+
+                        <svg class="w-6 h-6 text-green-600 " fill="none" stroke="currentColor " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+
+                        </svg>
+
+                    </div>
+
+                    <h4 class="font-bold text-gray-800 text-lg mb-2 dark:text-blue-600">Secure Data</h4>
+
+                    <p class="text-gray-600 dark:text-white">Enterprise-grade security with end-to-end encryption for all your project data.</p>
+
+                    <ul class="mt-4 space-y-2">
+
+                        <li class="flex items-center text-sm text-gray-500 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-2 dark:text-blue-600"></i> SOC 2 Type II certified
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-500 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-2  dark:text-blue-600"></i> GDPR compliant
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-500 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-2  dark:text-blue-600"></i> Role-based access control
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+               
+
+                <!-- Feature 2 -->
+
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition duration-200 border border-gray-100 dark:bg-white/5 ">
+
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+
+                        </svg>
+
+                    </div>
+
+                    <h4 class="font-bold text-gray-800 text-lg mb-2 dark:text-blue-600">Real-time Insights</h4>
+
+                    <p class="text-gray-600 dark:text-white">Get instant visibility into project profitability and performance metrics.</p>
+
+                    <ul class="mt-4 space-y-2">
+
+                        <li class="flex items-center text-sm text-gray-500 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-2  dark:text-blue-600"></i> Customizable dashboards
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-500 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-2  dark:text-blue-600"></i> Automated reporting
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-500 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-2  dark:text-blue-600"></i> Predictive analytics
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+               
+
+                <!-- Feature 3 -->
+
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition duration-200 border border-gray-100 dark:bg-white/5">
+
+                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
+
+                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+
+                        </svg>
+
+                    </div>
+
+                    <h4 class="font-bold text-gray-800 text-lg mb-2 dark:text-blue-600">Team Collaboration</h4>
+
+                    <p class="text-gray-600 dark:text-white">Connect your entire team with integrated communication and task management.</p>
+
+                    <ul class="mt-4 space-y-2">
+
+                        <li class="flex items-center text-sm text-gray-500 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-2 dark:text-blue-600"></i> Integrated chat & comments
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-500 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-2 dark:text-blue-600"></i> File sharing & version control
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-500 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-2 dark:text-blue-600"></i> @mentions & notifications
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+               
+
+                <!-- Feature 4 -->
+
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition duration-200 border border-gray-100 dark:bg-white/5">
+
+                    <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mb-4">
+
+                        <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+
+                        </svg>
+
+                    </div>
+
+                    <h4 class="font-bold text-gray-800 text-lg mb-2 dark:text-blue-600">Advanced Reporting</h4>
+
+                    <p class="text-gray-600 dark:text-white dark:text-white">Generate comprehensive reports with customizable templates and automated scheduling.</p>
+
+                    <ul class="mt-4 space-y-2">
+
+                        <li class="flex items-center text-sm text-gray-500 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-2 dark:text-blue-600"></i> Pre-built report templates
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-500 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-2 dark:text-blue-600"></i> Export to PDF/Excel
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-500 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-2 dark:text-blue-600"></i> Scheduled report delivery
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+               
+
+                <!-- Feature 5 -->
+
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition duration-200 border border-gray-100 dark:bg-white/5">
+
+                    <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4">
+
+                        <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+
+                        </svg>
+
+                    </div>
+
+                    <h4 class="font-bold text-gray-800 text-lg mb-2 dark:text-blue-600">Resource Management</h4>
+
+                    <p class="text-gray-600 dark:text-white">Optimize team allocation and track utilization across all projects.</p>
+
+                    <ul class="mt-4 space-y-2">
+
+                        <li class="flex items-center text-sm text-gray-500 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-2 dark:text-blue-600"></i> Capacity planning
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-500 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-2 dark:text-blue-600"></i> Time tracking
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-500 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-2 dark:text-blue-600"></i> Workload balancing
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+               
+
+                <!-- Feature 6 -->
+
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition duration-200 border border-gray-100 dark:bg-white/5">
+
+                    <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-4">
+
+                        <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+
+                        </svg>
+
+                    </div>
+
+                    <h4 class="font-bold text-gray-800 text-lg mb-2 dark:text-blue-600">Integrations</h4>
+
+                    <p class="text-gray-600 dark:text-white">Connect with your favorite tools and automate workflows across platforms.</p>
+
+                    <ul class="mt-4 space-y-2">
+
+                        <li class="flex items-center text-sm text-gray-500 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-2 dark:text-blue-600"></i> 100+ app integrations
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-500 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-2 dark:text-blue-600"></i> API access
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-500 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-2 dark:text-blue-600"></i> Custom webhooks
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Section Divider -->
+
+    <div class="section-divider my-16"></div>
+
+
+    <!-- Solutions Section -->
+
+    <section id="solutions" class="py-16 bg-blue-50 dark:bg-[--background--]">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 dark:bg-[--background--]">
+
+            <div class="text-center mb-16">
+
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-blue-600">Solutions for every team</h2>
+
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto dark:text-white">
+
+                    MONOGRID Productive adapts to your workflow, whether you're a small team or a large enterprise.
+
+                </p>
+
+            </div>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 " >
+
+                <!-- Solution 1 -->
+
+                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-10 dark:bg-white/5">
+
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+
+                        <i class="fas fa-laptop-code text-blue-600 text-2xl"></i>
+
+                    </div>
+
+                    <h4 class="font-bold text-gray-800 text-lg mb-2 dark:text-blue-600">Software Teams</h4>
+
+                    <p class="text-gray-600 dark:text-white">Agile project management with sprint planning, bug tracking, and code integration.</p>
+
+                    <a href="#" class="mt-4 inline-flex items-center text-blue-600 font-medium">
+
+                        Learn more <i class="fas fa-arrow-right ml-2 text-sm"></i>
+
+                    </a>
+
+                </div>
+
+               
+
+                <!-- Solution 2 -->
+
+                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100 dark:bg-white/5">
+
+                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+
+                        <i class="fas fa-palette text-green-600 text-2xl"></i>
+
+                    </div>
+
+                    <h4 class="font-bold text-gray-800 text-lg mb-2 dark:text-blue-600">Creative Agencies</h4>
+
+                    <p class="text-gray-600 dark:text-white">Client project management with creative briefs, asset approval, and time tracking.</p>
+
+                    <a href="#" class="mt-4 inline-flex items-center text-blue-600 font-medium">
+
+                        Learn more <i class="fas fa-arrow-right ml-2 text-sm"></i>
+
+                    </a>
+
+                </div>
+
+               
+
+                <!-- Solution 3 -->
+
+                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100 dark:bg-white/5">
+
+                    <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
+
+                        <i class="fas fa-chart-line text-purple-600 text-2xl"></i>
+
+                    </div>
+
+                    <h4 class="font-bold text-gray-800 text-lg mb-2 dark:text-blue-600">Marketing Teams</h4>
+
+                    <p class="text-gray-600 dark:text-white">Campaign planning, content calendars, and performance tracking in one place.</p>
+
+                    <a href="#" class="mt-4 inline-flex items-center text-blue-600 font-medium">
+
+                        Learn more <i class="fas fa-arrow-right ml-2 text-sm"></i>
+
+                    </a>
+
+                </div>
+
+               
+
+                <!-- Solution 4 -->
+
+                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100 dark:bg-white/5">
+
+                    <div class="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mb-4">
+
+                        <i class="fas fa-hard-hat text-red-600 text-2xl"></i>
+
+                    </div>
+
+                    <h4 class="font-bold text-gray-800 text-lg mb-2 dark:text-blue-600">Consulting Firms</h4>
+
+                    <p class="text-gray-600 dark:text-white">Client engagement tracking, resource allocation, and profitability analysis.</p>
+
+                    <a href="#" class="mt-4 inline-flex items-center text-blue-600 font-medium">
+
+                        Learn more <i class="fas fa-arrow-right ml-2 text-sm"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Section Divider -->
+
+    <div class="section-divider my-16"></div>
+
+
+    <!-- Testimonials Section -->
+
+    <section id="testimonials" class="py-16 bg-white dark:bg-[--background--]">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-16">
+
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-blue-600">Loved by teams worldwide</h2>
+
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto dark:text-white">
+
+                    See how teams are transforming their project management with MONOGRID Productive.
+
+                </p>
+
+            </div>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Testimonial 1 -->
+
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 dark:bg-white/5">
+
+                    <div class="flex items-center mb-4">
+
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+
+                            <span class="text-blue-600 font-bold">JD</span>
+
+                        </div>
+
+                        <div class="ml-4">
+
+                            <h4 class="font-bold text-gray-800 dark:text-blue-600">John Davis</h4>
+
+                            <p class="text-sm text-gray-500 dark:text-white">CTO, TechCorp</p>
+
+                        </div>
+
+                    </div>
+
+                    <p class="text-gray-600 italic dark:text-white">
+
+                        "MONOGRID Productive has transformed how our engineering teams collaborate. We've reduced project delivery time by 30% and improved cross-team visibility significantly."
+
+                    </p>
+
+                    <div class="mt-4 flex text-yellow-400">
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                </div>
+
+               
+
+                <!-- Testimonial 2 -->
+
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 dark:bg-white/5">
+
+                    <div class="flex items-center mb-4">
+
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+
+                            <span class="text-green-600 font-bold">SM</span>
+
+                        </div>
+
+                        <div class="ml-4">
+
+                            <h4 class="font-bold text-gray-800 dark:text-blue-600">Sarah Mitchell</h4>
+
+                            <p class="text-sm text-gray-500 dark:text-white">Creative Director, InnovateCo</p>
+
+                        </div>
+
+                    </div>
+
+                    <p class="text-gray-600 italic dark:text-white">
+
+                        "The resource management features alone have saved us countless hours. We can now accurately forecast project needs and allocate our creative team more effectively."
+
+                    </p>
+
+                    <div class="mt-4 flex text-yellow-400">
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                </div>
+
+               
+
+                <!-- Testimonial 3 -->
+
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 dark:bg-white/5">
+
+                    <div class="flex items-center mb-4">
+
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+
+                            <span class="text-purple-600 font-bold">RJ</span>
+
+                        </div>
+
+                        <div class="ml-4">
+
+                            <h4 class="font-bold text-gray-800 dark:text-blue-600">Robert Johnson</h4>
+
+                            <p class="text-sm text-gray-500 dark:text-white">VP Operations, GlobalSoft</p>
+
+                        </div>
+
+                    </div>
+
+                    <p class="text-gray-600 italic dark:text-white">
+
+                        "The real-time reporting and analytics have given us unprecedented visibility into project profitability. We've identified cost savings opportunities we never knew existed."
+
+                    </p>
+
+                    <div class="mt-4 flex text-yellow-400">
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star-half-alt"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Section Divider -->
+
+    <div class="section-divider my-16"></div>
+
+
+    <!-- Pricing Section -->
+
+    <section id="pricing" class="py-16 bg-blue-50 to-white dark:bg-[--background--]">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 dark:bg-[--background--]">
+
+            <div class="text-center mb-16">
+
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-blue-600">Simple, transparent pricing</h2>
+
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto dark:text-white,/lki;o9">
+
+                    Choose the plan that works best for your team. All plans include core features with no hidden fees.
+
+                </p>
+
+            </div>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+
+                <!-- Plan 1 -->
+
+                <div class="bg-white rounded-xl p-8 shadow-md border border-gray-200 dark:bg-white/5">
+
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2 dark:text-blue-600">Starter</h3>
+
+                    <p class="text-gray-600 mb-6 dark:text-white">Perfect for small teams getting started</p>
+
+                    <div class="mb-6">
+
+                        <span class="text-4xl font-bold text-gray-900 dark:text-blue-600">$19</span>
+
+                        <span class="text-gray-600 dark:text-white">/user/month</span>
+
+                    </div>
+
+                    <button class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-3 px-4 rounded-lg transition duration-200 mb-6 dark:text-blue-600">
+
+                        Get Started
+
+                    </button>
+
+                    <ul class="space-y-3">
+
+                        <li class="flex items-center text-sm text-gray-600 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-3 dark:text-blue-600"></i> Up to 10 users
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-600 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-3 dark:text-blue-600"></i> Basic project management
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-600 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-3 dark:text-blue-600"></i> 5GB storage
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-600 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-3 dark:text-blue-600"></i> Standard support
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+               
+
+                <!-- Plan 2 - Featured -->
+
+                <div class="bg-white rounded-xl p-8 shadow-lg border-2 border-blue-500 relative dark:bg-white/5">
+
+                    <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-4 py-1 rounded-bl-lg rounded-tr-lg">
+
+                        MOST POPULAR
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2 dark:text-blue-600">Professional</h3>
+
+                    <p class="text-gray-600 mb-6 dark:text-white">For growing teams with advanced needs</p>
+
+                    <div class="mb-6">
+
+                        <span class="text-4xl font-bold text-gray-900 dark:text-blue-600">$39</span>
+
+                        <span class="text-gray-600 dark:text-white">/user/month</span>
+
+                    </div>
+
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition duration-200 mb-6 ">
+
+                        Get Started
+
+                    </button>
+
+                    <ul class="space-y-3">
+
+                        <li class="flex items-center text-sm text-gray-600 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-3 dark:text-blue-600"></i> Up to 50 users
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-600 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-3 dark:text-blue-600"></i> Advanced analytics
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-600 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-3 dark:text-blue-600"></i> 100GB storage
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-600 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-3 dark:text-blue-600"></i> Priority support
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-600 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-3"></i> Custom workflows
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+               
+
+                <!-- Plan 3 -->
+
+                <div class="bg-white rounded-xl p-8 shadow-md border border-gray-200 dark:bg-white/5">
+
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2 dark:text-blue-600">Enterprise</h3>
+
+                    <p class="text-gray-600 mb-6 dark:text-white">For large organizations with complex requirements</p>
+
+                    <div class="mb-6">
+
+                        <span class="text-4xl font-bold text-gray-900 dark:text-blue-600">$69</span>
+
+                        <span class="text-gray-600 dark:text-white">/user/month</span>
+
+                    </div>
+
+                    <button class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-3 px-4 rounded-lg transition duration-200 mb-6 dark:text-blue-600">
+
+                        Contact Sales
+
+                    </button>
+
+                    <ul class="space-y-3">
+
+                        <li class="flex items-center text-sm text-gray-600 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-3 dark:text-blue-600"></i> Unlimited users
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-600 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-3 dark:text-blue-600"></i> Advanced security
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-600 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-3 dark:text-blue-600"></i> 1TB+ storage
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-600 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-3 dark:text-blue-600"></i> 24/7 premium support
+
+                        </li>
+
+                        <li class="flex items-center text-sm text-gray-600 dark:text-white">
+
+                            <i class="fas fa-check text-green-500 mr-3 dark:text-blue-600"></i> Dedicated account manager
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA Section -->
+
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+            <h2 class="text-3xl font-bold mb-4">Ready to transform your project management?</h2>
+
+            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+
+                Join thousands of teams who have streamlined their workflows and improved productivity with MONOGRID Productive.
+
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+
+                <button class="bg-white text-blue-600 hover:bg-blue-50 font-semibold py-3 px-8 rounded-lg transition duration-200 shadow-md">
+
+                    Start Free Trial
+
+                </button>
+
+                
+                    
+                    <a href="book a demo.html" class="bg-transparent border border-white text-white hover:bg-white/10 font-medium py-3 px-8 rounded-lg transition duration-200" title="3ii3">
+                             Book a Demo
+                    </a>
+
+               
+
+            </div>
+
+            <p class="mt-6 text-blue-200">No credit card required • 14-day free trial • Cancel anytime</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="bg-gray-900 text-white py-12">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+
+                <div class="lg:col-span-2">
+
+                    <h3 class="text-xl font-bold mb-4">MONOGRID <span class="text-blue-400">Productive</span></h3>
+
+                    <p class="text-gray-400 mb-6 max-w-md">
+
+                        The all-in-one project management platform that helps teams streamline workflows, improve collaboration, and drive better business outcomes.
+
+                    </p>
+
+                    <div class="flex space-x-4">
+
+                        <a href="#" class="text-gray-400 hover:text-white" title="yy">
+
+                            <i class="fab fa-twitter text-xl"></i>
+
+                        </a>
+
+                        <a href="#" class="text-gray-400 hover:text-white" title="34">
+
+                            <i class="fab fa-linkedin text-xl"></i>
+
+                        </a>
+
+                        <a href="#" class="text-gray-400 hover:text-white" title="e3">
+
+                            <i class="fab fa-facebook text-xl"></i>
+
+                        </a>
+
+                        <a href="#" class="text-gray-400 hover:text-white" title="ee">
+
+                            <i class="fab fa-github text-xl"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+               
+
+                <div>
+
+                    <h4 class="font-bold text-lg mb-4">Product</h4>
+
+                    <ul class="space-y-2">
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Features</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Solutions</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Pricing</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Integrations</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Updates</a></li>
+
+                    </ul>
+
+                </div>
+
+               
+
+                <div>
+
+                    <h4 class="font-bold text-lg mb-4">Resources</h4>
+
+                    <ul class="space-y-2">
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Documentation</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Help Center</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Community</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Webinars</a></li>
+
+                    </ul>
+
+                </div>
+
+               
+
+                <div>
+
+                    <h4 class="font-bold text-lg mb-4">Company</h4>
+
+                    <ul class="space-y-2">
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Partners</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Legal</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+           
+
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+
+                <p class="text-gray-400 text-sm">© 2025 MONOGRID. All rights reserved. brigada*</p>
+
+                <div class="flex space-x-6 mt-4 md:mt-0">
+
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
+
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Terms of Service</a>
+
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Cookie Policy</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

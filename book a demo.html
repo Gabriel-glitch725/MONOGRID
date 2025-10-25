@@ -1,0 +1,426 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+    <script> 
+      tailwind.config = { 
+        darkMode: 'class' 
+      } 
+    </script> 
+    <title>Book a Demo | Productive</title> 
+</head> 
+<body class="b-blue-50 dark:bg-[--background--] dark:text-white 
+min-h-screen"> 
+   <nav class="bg-white shadow-sm sticky top-0 z-50 dark:bg-[--background--] dark:text-white ">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex justify-between h-16">
+
+                <div class="flex items-center">
+
+                    <div class="flex-shrink-0 flex items-center">
+
+                        <h1 class="text-xl font-bold text-gray-900 dark:text-white">MONOGRID</h1>
+
+                        <span class="ml-2 text-xs font-medium bg-blue-100 text-blue-800 px-2 py-1 rounded-full">Productive</span>
+
+                    </div>
+
+                    <div class="hidden md:ml-10 md:flex md:space-x-8">
+
+                        <a href="productive.html" class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-blue-500 text-sm font-medium dark:text-white">Home</a>
+
+                        <a href="#features" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium dark:text-white">Features</a>
+
+                        <a href="#solutions" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium dark:text-white">Solutions</a>
+
+                        <a href="#pricing" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium dark:text-white">Pricing</a>
+
+                        <a href="#testimonials" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium dark:text-white">Testimonials</a>
+
+                    </div>
+
+                </div>
+
+                <div class="flex items-center">
+
+                   
+
+                     <button id="themeToggle" class=" text-2xl  mr-5  " title="sb" ><i class="fas fa-moon cursor-pointer" id="themeIcon"></i></button>
+
+                    <button class="ml-4 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition duration-200 hidden lg:block">
+
+                        Get Started Free
+
+                    </button>
+                  
+                    <button id="hamburger-button" class="text-3xl cursor-pointer m-1 mr-2 lg:hidden m">     
+
+                    &#97765
+
+                  </button>
+                 
+                  <header id="mobile-menu" class="fixed top-0 left-0 w-full h-screen bg-white text-black text-3xl flex-col justify-content-center lg:hidden origin-top animate-open-menu hidden dark:bg-[--background--] dark:text-white z-50 overflow-y-auto">
+  
+                        <div class="flex flex-row justify-between mt-2 w-full sm:mt-0 ">
+    
+                            <button class="text-5xl self-end px-3 flex justify-end mr-auto w-full sm:px-0 sm:text-4xl sm:mr-2">&times</button>
+  </div>
+  
+  <nav class="flex flex-col items-start py-auto ml-2 capitalize cursor-pointer " aria-label="mobile">
+    
+        <a href="productive.html" class=" text-left py-6 hover:opacity cursor-pointer mt-[4rem] sm:mt-[1.5rem] dark:text-white">Home</a>
+    
+        <a href="#features" class=" text-left py-6 hover:opacity  md:py-3 dark:text-white">features</a>
+    
+        <a href="#solutions"  class=" text-left py-6 hover:opacity cursor-pointer  sm:mb-3 md:py-3 dark:text-white">Solutions</a>
+    
+        <a href="#pricing"   class=" text-left py-6 hover:opacity cursor-pointer sm:mb-3 md:py-3 dark:text-white">Pricing</a>
+    
+        <a href=""   class=" text-left py-6 hover:opacity cursor-pointer  sm:mb-3 md:py-3 dark:text-white">Testimonials</a>
+ 
+</nav>
+</header>
+
+   
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+ 
+   <!-- Main Content --> 
+   <main class="pt-24 pb-16 px-4 max-w-6xl mx-auto "> 
+     <!-- Hero Section --> 
+     <div class="text-center mb-12"> 
+       <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 dark:text-white mb-6"> 
+         Request a <span class="text-blue-600">Demo</span> 
+       </h1> 
+       <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"> 
+         Talk to a Productive expert about your requirements, technology stack, and timeline. 
+Complete the form and we'll make sure to reach out. 
+       </p> 
+     </div> 
+ 
+     <div class="flex flex-col lg:flex-row gap-8"> 
+       <!-- Form Section --> 
+       <div class="lg:w-1/2"> 
+         <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 lg:p-8"> 
+           <form class="space-y-6"> 
+             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6"> 
+               <div> 
+                 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 
+mb-2">First Name</label> 
+                 <input type="text" placeholder="Timmy" class="w-full px-4 py-3 border 
+border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 
+focus:border-blue-500 dark:bg-gray-700 dark:text-white"> 
+               </div> 
+               <div> 
+                 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 
+mb-2">Last Name</label> 
+                 <input type="text" placeholder="Jakins" class="w-full px-4 py-3 border 
+border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 
+focus:border-blue-500 dark:bg-gray-700 dark:text-white"> 
+               </div> 
+             </div> 
+              
+             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6"> 
+               <div> 
+                 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 
+mb-2">Work Email</label> 
+                 <input type="email" placeholder="name@productive.com" class="w-full px-4 py-3 
+border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 
+focus:border-blue-500 dark:bg-gray-700 dark:text-white"> 
+               </div> 
+               <div> 
+                 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 
+mb-2">Company</label> 
+                 <input type="text" placeholder="Productive" class="w-full px-4 py-3 border 
+border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 
+focus:border-blue-500 dark:bg-gray-700 dark:text-white"> 
+               </div> 
+             </div> 
+              
+             <div> 
+               <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 
+mb-2">How did you hear about us?</label> 
+               <input type="text" placeholder="Enter your message" class="w-full px-4 py-3 
+border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 
+focus:border-blue-500 dark:bg-gray-700 dark:text-white"> 
+             </div> 
+              
+             <div> 
+               <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 
+mb-2">Project Details or Questions</label> 
+               <textarea placeholder="Share your requirements" rows="4" class="w-full px-4 py-3 
+border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 
+focus:border-blue-500 dark:bg-gray-700 dark:text-white"></textarea> 
+             </div> 
+              
+             <div class="flex items-center"> 
+               <input type="checkbox" class="h-4 w-4 text-blue-600 focus:ring-blue-500 
+border-gray-300 rounded" title="eee"> 
+               <label class="ml-2 block text-sm text-gray-700 dark:text-gray-300"> 
+                 Yes, I'd like to receive news and updates by email 
+               </label> 
+             </div> 
+              
+             <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between pt-4"> 
+               <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 lg:mb-0"> 
+                 By submitting this form you agree with our <a href="#" class="text-blue-600 
+hover:underline">privacy policy</a> 
+               </p> 
+               <button type="submit" class="px-8 py-3 bg-blue-600 text-white font-medium 
+rounded-lg hover:bg-blue-700 transition-colors w-full lg:w-auto"> 
+                 Get Started 
+               </button> 
+             </div> 
+           </form> 
+         </div> 
+       </div> 
+        
+       <!-- Benefits Section --> 
+       <div class="lg:w-1/2 space-y-8"> 
+         <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6"> 
+           <div class="flex items-start space-x-4"> 
+             <div class="flex-shrink-0 w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex 
+items-center justify-center"> 
+               <i class="fas fa-chart-simple text-blue-600 text-xl"></i> 
+             </div> 
+             <div> 
+               <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Reduce Log and 
+Metric Volume</h3> 
+               <p class="text-gray-600 dark:text-gray-300">Effectively handle log data overload 
+with Productive. We trim logs efficiently, aiding resource management and enhancing system 
+performance.</p> 
+             </div> 
+           </div> 
+         </div> 
+          
+         <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6"> 
+           <div class="flex items-start space-x-4"> 
+             <div class="flex-shrink-0 w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex 
+items-center justify-center"> 
+               <i class="fas fa-diagram-project text-blue-600 text-xl"></i> 
+             </div> 
+             <div> 
+               <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Route Data to the 
+Right Destination</h3> 
+               <p class="text-gray-600 dark:text-gray-300">Easily route all of your metrics, logs, 
+and traces to any destination or vendor with no risk of lock-in.</p> 
+             </div> 
+           </div> 
+         </div> 
+          
+         <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6"> 
+           <div class="flex items-start space-x-4"> 
+             <div class="flex-shrink-0 w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex 
+items-center justify-center"> 
+               <i class="fas fa-shield-halved text-blue-600 text-xl"></i> 
+             </div> 
+             <div> 
+               <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Edit, Mask & 
+Encrypt Sensitive Data</h3> 
+               <p class="text-gray-600 dark:text-gray-300">Safeguard sensitive data on your 
+servers. Simplify compliance and security by removing sensitive information before it leaves 
+your servers.</p> 
+             </div> 
+           </div> 
+         </div> 
+       </div> 
+     </div> 
+   </main> 
+ 
+   <!-- Additional Resources --> 
+   <section class="py-16 bg-white dark:bg-gray-800"> 
+     <div class="max-w-6xl mx-auto px-4 text-center"> 
+       <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-4">Looking for something 
+else?</h2> 
+       <p class="text-lg text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto"> 
+         Explore more options and find what you're looking for. Our website offers a wide range 
+of resources, products, and solutions to meet your needs. 
+       </p> 
+        
+       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> 
+         <div class="bg-gray-50 dark:bg-gray-700 rounded-xl p-6 text-center"> 
+           <div class="w-12 h-12 bg-red-100 dark:bg-red-900/30 rounded-lg flex items-center 
+justify-center mx-auto mb-4"> 
+             <i class="fas fa-file text-red-600 text-xl"></i> 
+           </div> 
+           <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Documentation</h3> 
+           <p class="text-gray-600 dark:text-gray-300">Explore our documentation for valuable 
+insights about our products and services.</p> 
+         </div> 
+          
+         <div class="bg-gray-50 dark:bg-gray-700 rounded-xl p-6 text-center"> 
+           <div class="w-12 h-12 bg-gray-100 dark:bg-gray-600 rounded-lg flex items-center 
+justify-center mx-auto mb-4"> 
+             <i class="fas fa-headset text-gray-600 dark:text-gray-400 text-xl"></i> 
+           </div> 
+           <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Contact 
+Support</h3> 
+           <p class="text-gray-600 dark:text-gray-300">Our support engineers provide expert 
+assistance through our customer portal.</p> 
+         </div> 
+          
+         <div class="bg-gray-50 dark:bg-gray-700 rounded-xl p-6 text-center"> 
+           <div class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-lg flex 
+items-center justify-center mx-auto mb-4"> 
+             <i class="fas fa-dollar text-green-600 text-xl"></i> 
+           </div> 
+           <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">About Us</h3> 
+           <p class="text-gray-600 dark:text-gray-300">Learn more about our mission, values, 
+and commitment to delivering exceptional products.</p> 
+         </div> 
+       </div> 
+     </div> 
+   </section> 
+ 
+   <!-- Footer --> 
+   <footer class="bg-gray-900 text-white py-12">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+
+                <div class="lg:col-span-2">
+
+                    <h3 class="text-xl font-bold mb-4">MONOGRID <span class="text-blue-400">Productive</span></h3>
+
+                    <p class="text-gray-400 mb-6 max-w-md">
+
+                        The all-in-one project management platform that helps teams streamline workflows, improve collaboration, and drive better business outcomes.
+
+                    </p>
+
+                    <div class="flex space-x-4">
+
+                        <a href="#" class="text-gray-400 hover:text-white" title="yy">
+
+                            <i class="fab fa-twitter text-xl"></i>
+
+                        </a>
+
+                        <a href="#" class="text-gray-400 hover:text-white" title="34">
+
+                            <i class="fab fa-linkedin text-xl"></i>
+
+                        </a>
+
+                        <a href="#" class="text-gray-400 hover:text-white" title="e3">
+
+                            <i class="fab fa-facebook text-xl"></i>
+
+                        </a>
+
+                        <a href="#" class="text-gray-400 hover:text-white" title="ee">
+
+                            <i class="fab fa-github text-xl"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+               
+
+                <div>
+
+                    <h4 class="font-bold text-lg mb-4">Product</h4>
+
+                    <ul class="space-y-2">
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Features</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Solutions</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Pricing</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Integrations</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Updates</a></li>
+
+                    </ul>
+
+                </div>
+
+               
+
+                <div>
+
+                    <h4 class="font-bold text-lg mb-4">Resources</h4>
+
+                    <ul class="space-y-2">
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Documentation</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Help Center</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Community</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Webinars</a></li>
+
+                    </ul>
+
+                </div>
+
+               
+
+                <div>
+
+                    <h4 class="font-bold text-lg mb-4">Company</h4>
+
+                    <ul class="space-y-2">
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Partners</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white">Legal</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+           
+
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+
+                <p class="text-gray-400 text-sm">© 2025 MONOGRID. All rights reserved. brigada*</p>
+
+                <div class="flex space-x-6 mt-4 md:mt-0">
+
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
+
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Terms of Service</a>
+
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Cookie Policy</a>
+
+                </div>
+
+            </div>
+
+        </div>
+ 
+   <script src="script.js"></script>
+</body> 
+</html> 
+ 

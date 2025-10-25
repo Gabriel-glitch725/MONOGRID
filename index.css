@@ -1,0 +1,127 @@
+@import "tailwind";
+
+
+
+
+
+
+@layer utilities {
+  @keyframes open-menu {
+    0% {
+      transform: scaleY(0);
+    }
+
+    80% {
+      transform: scaleY(1.2);
+    }
+
+    100% {
+      transform: scaleY(1);
+    }
+  }
+
+  .animate-open-menu {
+    animation: open-menu 0.5s ease-in-out forwards;
+  }
+}
+
+
+/***DEFAULT CSS**/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  overflow-x: hidden;
+  z-index: 0;
+}
+
+:root {
+  --background--: #090a13;
+}
+
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.shadow1 {
+  box-shadow: 1px 1px 2px 0px;
+}
+
+
+.duration {
+  transition-duration: 1000s;
+}
+
+.font {
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.shadow2 {
+ box-shadow: 0px 2px 3px 0px;
+}
+
+.shadow3{
+   box-shadow: 0px 2px 5px 0px;
+}
+.background-black {
+  background-color: rgb(1, 1, 8);
+}
+
+
+  @media screen and (device-width:430px) and (device-height:932px) and (orientation:portrait) {
+    #iphone14 {
+     margin-left: 1rem ;
+     margin-right: 1rem;
+    }
+    #iphone14b {
+     margin-left: 4rem ;
+     margin-right: 4rem;
+    }
+  }
+
+  @media screen and (device-width:640px) and (device-height:932px) and (orientation:portrait) {
+
+  }
+
+   .grid-pattern {
+
+            background-image:
+
+                linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+
+                linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+
+            background-size: 30px 30px;
+            
+   }
+
+   .gradient-text {
+
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        .section-divider {
+
+            height: 1px;
+
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+
+        }
